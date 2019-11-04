@@ -173,6 +173,7 @@ class MessageRouter {
   // Examines the context from the Dialogflow response and returns a boolean
   // indicating whether the agent placed the customer in operator mode
   _checkOperatorMode (apiResponse) {
+    // return true
     let contexts = apiResponse.queryResult.outputContexts;
     let operatorMode = false;
     for (const context of contexts) {
